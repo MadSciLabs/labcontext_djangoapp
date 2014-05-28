@@ -54,3 +54,5 @@ class InteractionSpacebrewRoutes(models.Model):
 	interactionName = models.CharField(max_length=200)
 	dataType = models.CharField(max_length=20)
 
+	def __unicode__(self):
+		return self.interactionName
